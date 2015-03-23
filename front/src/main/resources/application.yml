@@ -1,0 +1,14 @@
+debug:
+zuul:
+  routes:
+    resource1:
+      path: /resource1/**
+      url: http://localhost:9001/resource1/
+    resource2:
+      path: /resource2/**
+      url: http://localhost:9002/resource2/
+
+logging:
+  level:
+    org.springframework: INFO
+    com.netflix: DEBUG
